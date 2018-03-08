@@ -1,0 +1,15 @@
+body {
+  padding: 100px;
+  background-color: #D6D6D6;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.class1 {
+	font: 14px;
+	color: #4E4ED8;
+}
+
+.class2 {
+	font: 14px;
+	color: #D45959;
+}
