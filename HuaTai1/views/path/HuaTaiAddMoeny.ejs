@@ -3,6 +3,7 @@
   <head>
     <title>添加Money</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/testStyle.css">
     <script type="text/javascript" src="https://l2.io/ip.js?var=myIP"></script>
   </head>
   <body>
@@ -12,10 +13,21 @@
 
     <div id = "auth_submit" style="display:none">
       <form action="/HuaTaiAddMoeny/addMoney" method="POST">
-        <input type="text" name="name" />
-        <input type="text" name="money" />
-        <input type="text" name="version" />
-        <input type="submit" value="添加" />
+        <div>
+          <p>name</p>
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <p>money</p>
+          <input type="text" name="money" />
+        </div>
+        <div>
+          <p>version</p>
+          <input type="text" name="version" />
+        </div>
+        <div>
+          <input class="button_add" style="margin-top: 30px;" type="submit" value="添加" />
+        </div>
       </form> 
     </div>
 

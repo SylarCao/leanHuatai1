@@ -24,25 +24,25 @@ router.post('/addMoney', function(req, res, next) {
 	var name = req.body.name;
 	var money = parseInt(req.body.money);
 	var version = req.body.version;
-	var time =  moment().toDate();
 
-	var member = new Todo();
-	member.set('name', name);
-  member.set('money', money);
-  member.set('version', version);
-  member.set('time', time);
+	if (name && money && version) {
+		var time =  moment().toDate();
 
-  member.save().then(function(todo) {
-    res.redirect('/HuaTaiFund');
-  }).catch(next);
+		var member = new Todo();
+		member.set('name', name);
+	  member.set('money', money);
+	  member.set('version', version);
+	  member.set('time', time);
+
+	  member.save().then(function(todo) {
+	    res.redirect('/HuaTaiFund');
+	  }).catch(next);
+	} else {
+		res.redirect('/HuaTaiFund');
+	}
+
+	
 
 });
-
-// function getIPAddress(time){
-	
-// 	return rt;
-// };
-
-
 
 module.exports = router;
