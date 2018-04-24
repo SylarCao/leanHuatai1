@@ -22,18 +22,21 @@
     <table border="1" cellspacing="0" width="40%">
        <% for(var i=0; i<fund.length; i++) {%> 
       <tr style= "height: 33px; font-size: 20px;">
-        <td style= "width: 30%;">
+        <td style= "width: 20%;">
           <%= fund[i].get('name') %>
         </td>
-        <td style= "width: 30%;">
+        <td style= "width: 20%;">
           <%= fund[i].get('money') %>
         </td>
-         <td style= "width: 60%;">
+         <td style= "width: 40%;">
           <%= fund[i].get('time') %>
+        </td>
+        <td style= "width: 20%;">
+          <%= fund[i].get('version') %>
         </td>
       </tr>
       <% } %>
     </table>
-    
+
   </body>
 </html>
