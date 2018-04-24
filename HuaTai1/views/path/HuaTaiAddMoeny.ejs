@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>添加Money</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="https://l2.io/ip.js?var=myIP"></script>
+  </head>
+  <body>
+    <div id = "no_auth" >
+      <h1> 你没有权限看这个 </h1>
+    </div>
+
+    <div id = "auth_submit" style="display:none">
+      <form action="/HuaTaiAddMoeny/addMoney" method="POST">
+        <input type="text" name="name" />
+        <input type="text" name="money" />
+        <input type="text" name="version" />
+        <input type="submit" value="添加" />
+      </form> 
+    </div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+
+  var var_ip = myIP;
+
+  var sameIP = function() {
+    if (var_ip == "114.141.190.122") {
+      document.getElementById('no_auth').style.display = "none";
+      document.getElementById('auth_submit').style.display = "";
+    }
+  }
+
+  sameIP();
+
+</script>

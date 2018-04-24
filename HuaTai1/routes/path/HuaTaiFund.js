@@ -40,5 +40,4 @@ function modifyTime(time){
 	return rt;
 };
 
-
 module.exports = router;

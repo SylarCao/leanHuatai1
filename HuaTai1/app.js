@@ -16,6 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
+app.use(express.static('node_modules'));
 
 // 设置默认超时时间
 app.use(timeout('15s'));
@@ -41,6 +42,7 @@ app.use('/mytodo', require('./routes/mytodo'));
 app.use('/path1', require('./routes/path/path1'));
 app.use('/testHtml', require('./routes/path/testHtml'));
 app.use('/HuaTaiFund', require('./routes/path/HuaTaiFund'));
+app.use('/HuaTaiAddMoeny', require('./routes/path/HuaTaiAddMoeny'));
 
 
 app.use(function(req, res, next) {

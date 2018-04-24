@@ -4,6 +4,7 @@
     <title>华泰iOS基金</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/testStyle.css">
+    <script type="text/javascript" src="https://l2.io/ip.js?var=myIP"></script>
   </head>
   <body>
     <h1>iOS代码审核 基金</h1>
@@ -16,6 +17,8 @@
       <li><h3>提出一个有建设性的意见奖励5元</h3></li>
       <li><h3>一个bug 罚款2元 </h3></li>
     </ul>
+
+    <h3 id="add" style="display:none"> <a class="button_add" href="/HuaTaiAddMoeny">  增加  </a> </h3>
 
     <br/>
 
@@ -40,3 +43,18 @@
 
   </body>
 </html>
+
+<script type="text/javascript">
+
+  var var_ip = myIP;
+
+  var sameIP = function() {
+    if (var_ip == "114.141.190.122") {
+      var v1 = document.getElementById('add');
+      v1.style.display="";
+    }
+  }
+
+  sameIP();
+
+</script>
