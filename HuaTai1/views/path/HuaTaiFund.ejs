@@ -10,24 +10,30 @@
 
 
     <ul class="class_subTitle">
-    <li><h3>请大家主动把钱给我</h3></li>
-    <li><h3>界面有点丑</h3></li>
-    <li><h3>有任何问题和我说</h3></li>
-    <li><h3>提出一个有建设性的意见奖励5元</h3></li>
-    <li><h3>一个bug 罚款2元 </h3></li>
+      <li><h3>请大家主动把钱给我</h3></li>
+      <li><h3>界面有点丑</h3></li>
+      <li><h3>有任何问题和我说</h3></li>
+      <li><h3>提出一个有建设性的意见奖励5元</h3></li>
+      <li><h3>一个bug 罚款2元 </h3></li>
     </ul>
+
     <br/>
 
-
-    <table>
+    <table border="1" cellspacing="0" width="40%">
        <% for(var i=0; i<fund.length; i++) {%> 
-      <tr>
-        <td>
+      <tr style= "height: 33px; font-size: 20px;">
+        <td style= "width: 30%;">
+          <%= fund[i].get('name') %>
+        </td>
+        <td style= "width: 30%;">
           <%= fund[i].get('money') %>
         </td>
-
+         <td style= "width: 60%;">
+          <%= fund[i].get('time') %>
+        </td>
       </tr>
       <% } %>
     </table>
+    
   </body>
 </html>
