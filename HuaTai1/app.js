@@ -40,6 +40,8 @@ app.use('/todos', require('./routes/todos'));
 app.use('/mytodo', require('./routes/mytodo'));
 app.use('/path1', require('./routes/path/path1'));
 app.use('/testHtml', require('./routes/path/testHtml'));
+app.use('/HuaTaiFund', require('./routes/path/HuaTaiFund'));
+
 
 app.use(function(req, res, next) {
   // 如果任何一个路由都没有返回响应，则抛出一个 404 异常给后续的异常处理器

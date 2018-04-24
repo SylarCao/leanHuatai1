@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>华泰iOS基金</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/testStyle.css">
+  </head>
+  <body>
+    <h1>iOS代码审核 基金</h1>
+
+
+    <ul class="class_subTitle">
+    <li><h3>请大家主动把钱给我</h3></li>
+    <li><h3>界面有点丑</h3></li>
+    <li><h3>有任何问题和我说</h3></li>
+    <li><h3>提出一个有建设性的意见奖励5元</h3></li>
+    <li><h3>一个bug 罚款2元 </h3></li>
+    </ul>
+    <br/>
+
+
+    <table>
+       <% for(var i=0; i<fund.length; i++) {%> 
+      <tr>
+        <td>
+          <%= fund[i].get('money') %>
+        </td>
+
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>

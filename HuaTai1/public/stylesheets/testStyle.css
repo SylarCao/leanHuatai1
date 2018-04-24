@@ -13,3 +13,9 @@ body {
 	font: 14px;
 	color: #D45959;
 }
+
+.class_subTitle {
+	font: 14px bold;
+	color: #D45959;
+	padding-bottom: 10px;
+}
